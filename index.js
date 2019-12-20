@@ -10,9 +10,9 @@ app.get('/', (req, res) => res.sendFile(__dirname+'/frontend/html/home.html'))
 app.get('/login', (req, res) => res.send('Login'))
 app.get('/register', (req, res) => res.send('Register'))
 
-var student = {"name" : "Being Zero",
+var student = {"name" : "Deekshith",
                "college" : "VNRVJIET",
-               "regno": "112323232"}
+               "regno": "17071A12C6"}
 app.get('/data', (req, res) => res.json(student))   
 
 
