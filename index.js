@@ -11,7 +11,7 @@ app.get('/login', (req, res) => res.send('Login'))
 app.get('/register', (req, res) => res.send('Register'))
 
 var student = {"name" : "Deekshith",
-               "college" : "VNRVJIET",
+               "college" : "VNRVJIET College",
                "regno": "17071A12C6"}
 app.get('/data', (req, res) => res.json(student))   
 
