@@ -1,3 +1,4 @@
+
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
@@ -10,11 +11,11 @@ app.get('/', (req, res) => res.sendFile(__dirname+'/frontend/html/home.html'))
 app.get('/login', (req, res) => res.send('Login'))
 app.get('/register', (req, res) => res.send('Register'))
 
-var student = {"name" : "Deekshith",
-               "college" : "VNRVJIET College",
+var student = {"name" : "Deekshith Bommidi",
+               "college" : "VNRVJIET",
                "regno": "17071A12C6"}
 app.get('/data', (req, res) => res.json(student))   
-
+app.get('/resume', (req, res) => res.sendFile(__dirname+'/frontend/html/resume.html'))
 
 
 //res.sendFile())
@@ -22,3 +23,4 @@ app.get('/data', (req, res) => res.json(student))
 
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
